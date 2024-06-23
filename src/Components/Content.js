@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css';
-import Aside from './Aside';
+
 
 
 const Content = () => {

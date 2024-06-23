@@ -1,4 +1,8 @@
 
+.browser{
+  background: linear-gradient(1deg, blue 20%, aliceblue 80%);
+}
+
 .App{
   width: 100vw;
   background: linear-gradient(150deg, aliceblue 20%, blue 80%);
@@ -11,8 +15,6 @@
     "footer footer footer footer"
   ;
   grid-template-rows: 100px 70px auto 70px;
-
-
   }
 
   .header{
@@ -36,11 +38,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    padding-top: 35px;
+    /* background: linear-gradient(1deg, blue 20%, aliceblue 80%); */
     /* background-color: rgb(237, 249, 7); */
     /* border: 2px solid rgb(101, 243, 14); */
 
   }
-  .nav > div{
+  .nav > ul{
     width: 80%;
     height: 100%;
     display: flex;
@@ -48,6 +52,36 @@
     justify-content: space-evenly;
     margin-top: 30px;
   }
+  .nav > ul > li{
+    width: 100px;
+    background: linear-gradient(160deg, #03228f 0%, #0b70e1 77%);
+    color: yellow;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 3px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms;
+    text-decoration: none;
+    list-style: none;
+  }
+.nav > ul > li:hover{
+  background: linear-gradient(0deg, #0b70e1 20%, #fff 80%);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  .navlink{
+    color: rgb(0,0,0);
+    
+  }
+}
+.navlink{
+  text-decoration: none;
+  color: yellow;
+}
 
   .content{
     width: 100%;
@@ -58,7 +92,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-
+    margin-top: 20px;
 
     /* border: 2px solid rgb(0, 0, 0); */
   }
@@ -92,6 +126,7 @@
   }
   
   .lateral{
+    margin-top: 30px;
     display: flex;
     width: 100%;
     grid-area: lateral;
@@ -120,11 +155,12 @@
   flex-flow: column wrap;
   align-items: center;
 }
-  .footer{
-    grid-area: footer;
-    border: 2px solid rgb(17, 0, 252);
-    color: yellow;
-  }
+
+.footer{
+  grid-area: footer;
+  border: 2px solid rgb(17, 0, 252);
+  color: yellow;
+}
 
 
 
